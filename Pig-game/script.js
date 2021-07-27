@@ -13,11 +13,7 @@ btnRoll.addEventListener("click", () => {
   if (random != 1) {
     currentPlayer.textContent = Number(currentPlayer.textContent) + random;
   } else {
-    if (random === 1) {
-      scores[activePlayer] += 0;
-    } else {
-      scores[activePlayer] += Number(currentPlayer.textContent);
-    }
+    scores[activePlayer] += 0;
     score[activePlayer].textContent = scores[activePlayer];
     currentPlayer.textContent = 0;
     players[activePlayer].classList.remove("player--active");
